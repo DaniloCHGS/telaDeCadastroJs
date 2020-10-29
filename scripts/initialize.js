@@ -1,0 +1,1 @@
+window.client = new ClientController();

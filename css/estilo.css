@@ -1,0 +1,10 @@
+div.container{
+    margin-top: 10px;
+    background-color: white;
+}
+#registerClint {
+    margin-top: 15px;
+    padding: 10px;
+    border-top: 3px solid red;
+    background-color: rgb(242, 242, 242)
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+   <title>Cadastro de Clientes</title>
+   <meta charset="utf-8">
+   <link rel="stylesheet" type="text/css" href="css/estilo.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+
+   <div class="container">
+      
+      <div class="row">
+         
+         <div class="col-md-6">
+            
+            <div id="infoView" style="margin-top: 16px">
+
+               <table id="tableClient" class="table table-striped">
+                     
+                     <tbody id="tableClientInfo">
+                        
+                        <tr style="border-top: 3px solid rgb(39, 39, 170);">
+                           <td>
+                              <label>
+                                 Nome
+                              </label>
+                           </td>
+                           <td>
+                              <label>
+                                 Telefone
+                              </label>
+                           </td>
+                           <td>
+                              <label>
+                                 Endereço
+                              </label>
+                           </td>
+                           <td>
+                              <label>
+                                 Email
+                              </label>
+                           </td>
+                        </tr>
+
+                     </tbody>
+
+                  </table>
+            </div>
+            
+         </div>
+
+         <div class="col-md-6">
+            
+            <div id="formView">
+               <form id="registerClint" method="post" action="">
+                  <label class="lead">Cadastro de Cliente</label>
+                  <div class="row">
+                     
+                     <div class="col-sm-12">
+                        
+                        <div class="form-group">
+                           <label>Nome*</label>
+                           <input type="text" name="nameClient" id="nameClient" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                           <label>Telefone*</label>
+                           <input type="text" name="telClient" id="telClient" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                           <label>Endereço</label>
+                           <input type="text" name="addressClient" id="addressClient" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                           <label>Email*</label>
+                           <input type="email" name="emailClient" id="emailClient" class="form-control">
+                        </div>
+
+                        <textarea class="form-control" rows="4" placeholder="Breve descrição" id="descriptionClient"></textarea> <br/>
+                        <input type="submit" name="registerClientBtn" id="registerClintBtn" value="Registrar" class="btn btn-success btn-block">
+
+                     </div>
+
+                  </div>
+               </form>
+
+               <form id="finderClint" method="post" action="">
+                  <div class="row">
+                     
+                     <div class="col-sm-12">
+                        
+                        <label class="lead">Pesquisa de Cliente</label>
+
+                        <div class="form-group">
+                           <label>Nome</label>
+                           <input type="text" name="finderNameClient" id="finderNameClient" class="form-control">
+                        </div>
+                        <input type="submit" name="finderClientBtn" id="finderClintBtn" value="Buscar" class="btn btn-success btn-block">
+                     </div>
+
+                  </div>
+               </form> <br>
+               
+               <form id="clientAdm" method="POST" action="">
+                  <div id="infoAdm">
+                           
+                  </div>
+               </form>
+            </div>
+
+         </div>
+
+      </div>
+
+   </div>
+
+   <script src="scripts/models/clientModel.js"></script>
+   <script src="scripts/controllers/clientGroupController.js"></script>
+   <script src="scripts/controllers/clientController.js"></script>
+   <script src="scripts/initialize.js"></script>
+
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
